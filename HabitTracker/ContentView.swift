@@ -9,8 +9,41 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var showingAddScreen = false
+    @ObservedObject var habits = Habits()
+    
     var body: some View {
-        Text("Hello, World!")
+        NavigationView {
+            List(habits.habits) { habit in
+                NavigationLink(destination: EditHabitView(habits: self.habits,  currentHabit: habit)) {
+                    VStack(alignment: .leading, spacing: 2)
+                    {
+                        Text(habit.name)
+                        HStack {
+                            Text(habit.description)
+                                .font(.subheadline)
+                                .foregroundColor(.secondary)
+                            Spacer()
+                            Text("Habit done: \(habit.activityCount)")
+                                .font(.subheadline)
+                                .foregroundColor(.secondary)
+                        }
+                        
+                    }
+                }
+                
+                
+            }
+            .navigationBarTitle("Habit Tracker")
+            .navigationBarItems(trailing: Button(action: {
+                self.showingAddScreen.toggle()
+            }) {
+                Image(systemName: "plus")
+            })
+                .sheet(isPresented: $showingAddScreen) {
+                    AddHabitView(habits: self.habits)
+            }
+        }
     }
 }
 

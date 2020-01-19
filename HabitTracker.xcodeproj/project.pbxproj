@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4629296A23D4B56F00C6B77E /* EditHabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4629296923D4B56F00C6B77E /* EditHabitView.swift */; };
 		4665DF3423C226BF0057197D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4665DF3323C226BF0057197D /* AppDelegate.swift */; };
 		4665DF3623C226BF0057197D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4665DF3523C226BF0057197D /* SceneDelegate.swift */; };
 		4665DF3823C226BF0057197D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4665DF3723C226BF0057197D /* ContentView.swift */; };
 		4665DF3A23C226C00057197D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4665DF3923C226C00057197D /* Assets.xcassets */; };
 		4665DF3D23C226C00057197D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4665DF3C23C226C00057197D /* Preview Assets.xcassets */; };
 		4665DF4023C226C00057197D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4665DF3E23C226C00057197D /* LaunchScreen.storyboard */; };
+		4665DF4823C227A10057197D /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4665DF4723C227A10057197D /* Habit.swift */; };
+		4665DF4A23C240E80057197D /* AddHabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4665DF4923C240E80057197D /* AddHabitView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4629296923D4B56F00C6B77E /* EditHabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditHabitView.swift; sourceTree = "<group>"; };
 		4665DF3023C226BF0057197D /* HabitTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabitTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4665DF3323C226BF0057197D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4665DF3523C226BF0057197D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		4665DF3C23C226C00057197D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4665DF3F23C226C00057197D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4665DF4123C226C00057197D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4665DF4723C227A10057197D /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
+		4665DF4923C240E80057197D /* AddHabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +62,12 @@
 		4665DF3223C226BF0057197D /* HabitTracker */ = {
 			isa = PBXGroup;
 			children = (
+				4665DF4723C227A10057197D /* Habit.swift */,
 				4665DF3323C226BF0057197D /* AppDelegate.swift */,
 				4665DF3523C226BF0057197D /* SceneDelegate.swift */,
 				4665DF3723C226BF0057197D /* ContentView.swift */,
+				4629296923D4B56F00C6B77E /* EditHabitView.swift */,
+				4665DF4923C240E80057197D /* AddHabitView.swift */,
 				4665DF3923C226C00057197D /* Assets.xcassets */,
 				4665DF3E23C226C00057197D /* LaunchScreen.storyboard */,
 				4665DF4123C226C00057197D /* Info.plist */,
@@ -148,7 +157,10 @@
 			files = (
 				4665DF3423C226BF0057197D /* AppDelegate.swift in Sources */,
 				4665DF3623C226BF0057197D /* SceneDelegate.swift in Sources */,
+				4665DF4823C227A10057197D /* Habit.swift in Sources */,
 				4665DF3823C226BF0057197D /* ContentView.swift in Sources */,
+				4665DF4A23C240E80057197D /* AddHabitView.swift in Sources */,
+				4629296A23D4B56F00C6B77E /* EditHabitView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
