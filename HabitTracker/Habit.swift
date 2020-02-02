@@ -21,9 +21,6 @@ struct Habit: Identifiable, Codable {
 }
 
 class Habits: ObservableObject {
-    enum CodingKeys: CodingKey {
-        case habits
-    }
     
     @Published var habits = [Habit]() {
         didSet {
